@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Genarator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>kindly add the tip</h1>
+            <form action="thank.html" id="form">
+                <label for="bill" id="billLabel">Your Actual Bill:</label>
+                <input type="number" id="bill" readonly value="1000" />
+                <label for="tipPercent" id="percentLabel">Add Tip in percent:</label>
+                <label for="tipAmount" id="amountLabel">Add Tip Amount:</label>
+                <input type="number" id="tipPercent" placeholder="%" value="0" min="0" />
+                <input type="number" id="tipAmount" placeholder="Amount" value="0" min="0" />
+                <label for="totalAmount" id="totalLabel">Your Total Bill:</label>
+                <span id="totalAmount" readonly>Total Amount</span>
+                <input type="submit" id="submit" value="Pay The Bill" />
+            </form>
+            <p id="credit">Tip Genarator-created by Juel Hossain</p>
+        </div>
+    </div>
+    <script src="master.js"></script>
+</body>
+
+</html>
